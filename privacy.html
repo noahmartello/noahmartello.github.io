@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Blu's Risky Roller</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 780px;
+    margin: 2rem auto;
+    padding: 0 1.25rem 3rem;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14161a; color: #e6e6e6; }
+    a { color: #7aa8ff; }
+    code { background: #22252b; }
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { margin-top: 2rem; font-size: 1.15rem; border-bottom: 1px solid #8884; padding-bottom: 0.25rem; }
+  .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+  code { background: #f0f1f4; padding: 0 0.3em; border-radius: 3px; font-size: 0.92em; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.25rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Blu's Risky Roller (Discord bot) — Last updated: July 10, 2026</p>
+
+<p>
+  This Privacy Policy explains what data Blu's Risky Roller ("the bot") collects when
+  you or a Discord server you belong to uses it, why we collect it, and how you can
+  request its removal.
+</p>
+
+<h2>1. Data We Collect</h2>
+<p>The bot stores the following data in Google Firebase Firestore:</p>
+<ul>
+  <li><strong>Discord IDs</strong> — user IDs, guild (server) IDs, role IDs, and channel IDs.</li>
+  <li><strong>Roll usage counters</strong> — how many rolls a user has used per role, and when.</li>
+  <li><strong>Win history</strong> — which winnable items (roles or instant wins) a user has won, how many times, and when.</li>
+  <li><strong>Active time-limited role entries</strong> — for won roles that auto-expire, the scheduled removal time.</li>
+  <li><strong>Guild configuration</strong> — winnable items an admin has configured, drop chances, allowed roles, and channel/server settings.</li>
+</ul>
+
+<h2>2. Data We Do NOT Collect</h2>
+<ul>
+  <li>Message content.</li>
+  <li>User presence, status, or activity.</li>
+  <li>Voice channel activity.</li>
+  <li>Direct messages that are not sent to the bot.</li>
+  <li>Email addresses, real names, or any information outside your public Discord identity.</li>
+</ul>
+
+<h2>3. Why We Collect It</h2>
+<p>
+  All stored data is required for the bot's core function: enforcing per-role roll
+  limits, tracking wins across sessions, running leaderboards, and scheduling
+  time-limited role removals that must survive bot restarts. Data is never used
+  for advertising, sold, or shared with third parties.
+</p>
+
+<h2>4. Where Data Is Stored</h2>
+<p>
+  Data is stored in Google Firebase Firestore (Google Cloud). Access is restricted
+  to the bot service account. Data in transit is encrypted via HTTPS.
+</p>
+
+<h2>5. Data Retention</h2>
+<p>
+  Guild-scoped data is retained while the bot remains a member of the guild.
+  User-scoped data (roll counters, win history) is retained until the user
+  requests deletion or the guild removes the bot. Configuration set by a guild
+  admin persists until an admin removes it via the bot's admin commands.
+</p>
+
+<h2>6. Your Rights</h2>
+<p>
+  You may request deletion of your personal data (user ID, roll counts, win history)
+  at any time. To do so, contact the operator at the address below with your Discord
+  user ID. Requests are typically processed within 7 days.
+</p>
+<p>
+  Server administrators may remove all guild-scoped data by removing the bot from
+  the server; the operator will purge remaining records on request.
+</p>
+
+<h2>7. Children</h2>
+<p>
+  The bot is intended for users who meet Discord's minimum age requirement (13, or
+  higher in some jurisdictions). We do not knowingly collect data from users below
+  that age. If you believe such data has been collected, contact us for deletion.
+</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>
+  This policy may be updated. The "Last updated" date at the top reflects the most
+  recent change. Continued use of the bot after an update constitutes acceptance
+  of the revised policy.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  Questions or data-deletion requests: <a href="mailto:martello.noah@gmail.com">martello.noah@gmail.com</a>
+</p>
+
+</body>
+</html>
